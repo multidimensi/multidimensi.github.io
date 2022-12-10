@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- navbar css -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- button css -->
+    <link rel="stylesheet" href="css/button.css" />
+
+    <!-- My Style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/desktop version.css" />
+    <link rel="stylesheet" href="css/page our team.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- Logo Title Bar -->
+    <link rel="icon" href="Assets/img/logo yogma biru.png" type="image/x-icon" />
+
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Our Team | PT. Yogma Wijaya kusuma</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar" id="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo">
+          <a href="#hero">
+            <img src="Assets/img/logo yogma.png" alt="" />
+            <span> PT.Yogma Wijaya Kusuma </span></a
+          >
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">PT.Yogma Wijaya Kusuma</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="home yogma.html#about-us">ABOUT US</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="history.html">history</a></li>
+                <li><a href="our team.html">Meet our Team</a></li>
+                <li class="more">
+                  <span
+                    ><a href="our team.html#careers">Career</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                  </span>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="our team.html#careers">Internship</a></li>
+                    <li><a href="our team.html#careers">Fresh graduate</a></li>
+                    <li><a href="our team.html#careers">Propesional</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#business">BUSINESS</a>
+              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="home yogma.html#business">SERVICE</a></li>
+                <li><a href="home yogma.html#business">busines unit location</a></li>
+                <li><a href="equipment.html">Equipmen & facility </a></li>
+                <li><a href="project.html">Project list</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact-us">CONTACT US</a></li>
+          </ul>
+        </div>
+        <!-- button information -->
+
+        <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header text-light bg-dark mx-auto">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Information of This Web</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body mx-auto">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-eca4aba9-4b2d-4808-9f95-f5878e7a4367"></div>
+          </div>
+        </div>
+        <!-- button information ahir  -->
+        <div class="etc-bar">
+          <div class="languange">
+            <div class="selected-langange">ENG</div>
+            <ul>
+              <li><a class="eng" href="#">ENG</a></li>
+              <li><a class="idn" href="#">IDN</a></li>
+              <li><a class="jpg" href="#">JPN</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <a class="buttoninformation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="buttoninformation__icon">
+                <img src="assets/img/info.png" alt="" />
+              </span>
+            </a>
+          </div>
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ahir navbar -->
+
+    <!-- hero section -->
+    <section id="hero-ourteam" class="hero-ourteam container-fluid">
+      <div class="container">
+        <h1 data-aos="fade-right">let's Meet our <br /><span> Amazing</span> team!!</h1>
+        <p>Lorem ipsum doloram amet culpa, necessitatibus nulla!</p>
+        <a href="#careers">
+          <button class="tombol btn2" data-aos="fade-up">join our team</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ahir hero section  -->
+
+    <!-- our team -->
+    <section>
+      <div class="container" id="ourteam">
+        <div class="line"></div>
+        <div class="row">
+          <div class="judul_ourteam col-lg-5 mb-3">
+            <h1 data-aos="fade-down">
+              MEET OUR <br />
+              <span> OUR AMAZING TEAM</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper -->
+    <ul class="button_ourteam container" id="button-filter">
+      <button class="btn" onclick="filterObjects('all')">show all</button>
+      <button class="btn" onclick="filterObjects('president')">president director</button>
+      <button class="btn" onclick="filterObjects('manager')">manager</button>
+      <button class="btn" onclick="filterObjects('general')">general manager</button>
+      <button class="btn" onclick="filterObjects('project')">project manager</button>
+      <button class="btn" onclick="filterObjects('site')">site manager</button>
+      <button class="btn" onclick="filterObjects('marketing')">marketing</button>
+      <button class="btn" onclick="filterObjects('drafter')">drafter</button>
+      <button class="btn" onclick="filterObjects('accounting')">accounting</button>
+      <button class="btn" onclick="filterObjects('engineer')">engineer</button>
+      <button class="btn" onclick="filterObjects('employe')">employe</button>
+    </ul>
+
+    <div class="objects swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <!-- card suhardono -->
+          <div class="card president swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/suhardono.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">SUHARdono</h2>
+              <h5 class="jabatan">President Director</h5>
+              <h6 class="list">081385050699</h6>
+              <h6 class="list">suhardono@yogma-wijaya.com</h6>
+              <p class="description">Maintaining the quality of work....</p>
+              <a href="#suhardono"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card angoro -->
+          <div class="card general manager swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/ANGGORO HARYAD squareI_.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">ANGGORO HARYADI</h2>
+              <h5 class="jabatan">general manager</h5>
+              <h6 class="list">08118306388</h6>
+              <h6 class="list">anggoro@yogma-wijaya.com</h6>
+              <p class="description">Build An unparalleled combination of....</p>
+              <a href="#anggoro-haryadi"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card kumala -->
+          <div class="card project manager swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/male 1.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Kumala Chandra</h2>
+              <h5 class="jabatan">Project Manager</h5>
+              <h6 class="list">085640507092</h6>
+              <h6 class="list">chandra@yogma-wijaya.com</h6>
+              <p class="description">Maintaining trust in work results...</p>
+              <a href="#kumala"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card arif -->
+          <div class="card site manager swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/male 1.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Muhammad Arif Wicaksono</h2>
+              <h5 class="jabatan">Site Manager</h5>
+              <h6 class="list">081282892320</h6>
+              <h6 class="list">arif@yogma-wijaya.com</h6>
+              <p class="description">Building civil structures is not very difficult...</p>
+              <a href="#arif"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card rexy -->
+          <div class="card site manager swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/rexy.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Rexy Reinhart</h2>
+              <h5 class="jabatan">Site Manager</h5>
+              <h6 class="list">0811797725</h6>
+              <h6 class="list">rexy@yogma-wijaya.com</h6>
+              <p class="description">Steeped in a culture of Civil Major..</p>
+              <a href="#rexy"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card andre -->
+          <div class="card drafter swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/Andre Rahmat .jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Andre Rahmat Suardi</h2>
+              <h5 class="jabatan">Drafter</h5>
+              <h6 class="list">082384585072</h6>
+              <h6 class="list">andre@yogma-wijaya.com</h6>
+              <p class="description">understanding the area of ​​the building...</p>
+              <a href="#andre"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card saiful -->
+          <div class="card drafter swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/Muchamad Saifu.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Muchamad Saiful Baitullo</h2>
+              <h5 class="jabatan">Drafter</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">saiful@yogma-wijaya.com</h6>
+              <p class="description">understanding the area of ​​the building...</p>
+              <a href="#saiful"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card yuda -->
+          <div class="card engineer swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/yuda.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Yuda Hagai Karo Karo</h2>
+              <h5 class="jabatan">engineer</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">yuda@yogma-wijaya.com</h6>
+              <p class="description">Being an engineer is not always...</p>
+              <a href="#yuda"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card ardi -->
+          <div class="card engineer swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/Ardiansyah.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Ardiyansha Paragih Jonor</h2>
+              <h5 class="jabatan">engineer</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">ardi@yogma-wijaya.com</h6>
+              <p class="description">Put safety first, yes, that's...</p>
+              <a href="#ardi"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card ida -->
+          <div class="card engineer swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/female 1.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Ida Mardiana</h2>
+              <h5 class="jabatan">engineer</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">ida@yogma-wijaya.com</h6>
+              <p class="description">Skill, speed, friendliness of a civil engineer...</p>
+              <a href="#ida"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card  muholik-->
+          <div class="card engineer swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/ahmadenginer.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Achmad Mukholik</h2>
+              <h5 class="jabatan">engineer</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">kholik@yogma-wijaya.com</h6>
+              <p class="description">Build a better working culture...</p>
+              <a href="#muholik"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card rizal -->
+          <div class="card accounting swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/male 1.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Rizal Pangaribuan</h2>
+              <h5 class="jabatan">accounting</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">rizal@yogma-wijaya.com</h6>
+              <p class="description">Where Everyone feels Respected...</p>
+              <a href="#rizal"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card sandro -->
+          <div class="card employe swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/Sandro .jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Sandro Widiyantiko</h2>
+              <h5 class="jabatan">Health Safety Environment</h5>
+              <h6 class="list">+62 811-8306-388</h6>
+              <h6 class="list">sandro@yogma-wijaya.com</h6>
+              <p class="description">Occupational health and safety is...</p>
+              <a href="#sandro"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+          <!-- card jatyo -->
+          <div class="card employe swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="Assets/foto profile/JATYO HSE DIVISION.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">JATYO</h2>
+              <h5 class="jabatan">HSE division</h5>
+              <h6 class="list">08118306388</h6>
+              <h6 class="list">anggoro@yogma-wijaya.com</h6>
+              <p class="description">Speedy, Unity, Quality, that's...</p>
+              <a href="#jatyo"><button class="tombol btn2">view more</button></a>
+            </div>
+          </div>
+
+          <!-- ahir card -->
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="bullet-roll swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- popup -->
+
+    <!-- suhardono -->
+    <div class="popup" id="suhardono">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/suhardono.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">SUHARDONO</h2>
+          <h5 class="jabatan">Presiden Director</h5>
+          <h6 class="list">081385050699</h6>
+          <h6 class="list">suhardono@yogma-wijaya.com</h6>
+          <span class="deskripsi"><p>Maintaining the quality of work, considering work risks, punctuality of work and maintaining the dignity of the company are gifts that our partners receive</p></span>
+        </div>
+      </div>
+    </div>
+    <!-- angoro -->
+    <div class="popup" id="anggoro-haryadi">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/ANGGORO HARYADI_.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">ANGGORO HARYADI</h2>
+          <h5 class="jabatan">general manager</h5>
+          <h6 class="list">08118306388</h6>
+          <h6 class="list">anggoro@yogma-wijaya.com</h6>
+          <span class="deskripsi"><p>Build An unparalleled combination of expertise in the construction and buildings, civil engineering structures and Steel structure</p> </span>
+        </div>
+      </div>
+    </div>
+    <!-- kumala -->
+    <div class="popup" id="kumala">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/male 2.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Kumala Chandra</h2>
+          <h5 class="jabatan">Project Manager</h5>
+          <h6 class="list">085640507092</h6>
+          <h6 class="list">chandra@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Maintaining trust in work results and timeliness to our partners, is a culture that we continue to provide</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- arif -->
+    <div class="popup" id="arif">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/male 2.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">M. Arif Wicaksono</h2>
+          <h5 class="jabatan">Site Manager</h5>
+          <h6 class="list">081282892320</h6>
+          <h6 class="list">arif@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Building civil structures is not very difficult, but paying attention to the environment from the impact of what we build is the main thing that we think about, and of course the result of our hard work</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- rexy -->
+    <div class="popup" id="rexy">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/rexy.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Rexy Reinhart</h2>
+          <h5 class="jabatan">Site Manager</h5>
+          <h6 class="list">0811797725</h6>
+          <h6 class="list">rexy@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Steeped in a culture of Civil Major, our teams strive and innovate every day to assist our customers as well as the end-users</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- andre -->
+    <div class="popup" id="andre">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/Andre Rahmat .jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Andre Rahmat Suardi</h2>
+          <h5 class="jabatan">Drafter</h5>
+          <h6 class="list">082384585072</h6>
+          <h6 class="list">andre@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>
+              understanding the area of ​​the building, the environment and the difficulties at work are the main things that I have to think about after getting the assignment, but the most important thing is how to make work easy, the
+              environment is maintained, and work safety, that's what I put in the technical drawings
+            </p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- saiful -->
+    <div class="popup" id="saiful">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/Muchamad Saifu.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Muchamad Saiful Baitullo</h2>
+          <h5 class="jabatan">Drafter</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">saiful@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>
+              understanding the area of ​​the building, the environment and the difficulties at work are the main things that I have to think about after getting the assignment, but the most important thing is how to make work easy, the
+              environment is maintained, and work safety, that's what I put in the technical drawings
+            </p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- yuda -->
+    <div class="popup" id="yuda">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/yuda.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Yuda Hagai Karo Karo</h2>
+          <h5 class="jabatan">engineer</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">yuda@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Being an engineer is not always about buildings, technical drawings and schedules, but understanding teamwork in working for safety and maximum results is the responsibility of a supervisor.</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ardi -->
+    <div class="popup" id="ardi">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/Ardiansyah.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Ardiyansha Paragih Jonor</h2>
+          <h5 class="jabatan">engineer</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">ardi@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Put safety first, yes, that's what we always say before we work, isn't it fun when you work carefully and see the beautiful results of your work. all paid off</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ida -->
+    <div class="popup" id="ida">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/female 2.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Ida Mardiana</h2>
+          <h5 class="jabatan">engineer</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">ida@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Skill, speed, friendliness of a civil engineer, find it in our team</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- muholik -->
+    <div class="popup" id="muholik">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/female 2.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Achmad Mukholik</h2>
+          <h5 class="jabatan">engineer</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">kholik@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Build a better working culture</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- rizal -->
+    <div class="popup" id="rizal">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/male 2.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Rizal Pangaribuan</h2>
+          <h5 class="jabatan">accounting</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">rizal@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Where Everyone feels Respected, Full of Values, Treated fairly and Precious. We Do It in our Team Works</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- sandro -->
+    <div class="popup" id="sandro">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/Sandro 2 .jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">Sandro Widiyantiko</h2>
+          <h5 class="jabatan">Health Safety Environment</h5>
+          <h6 class="list">+62 811-8306-388</h6>
+          <h6 class="list">sandro@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Occupational health and safety is the main thing that I think about when entering the work area</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- jatyo -->
+    <div class="popup" id="jatyo">
+      <a href="#">&times;</a>
+      <div class="content-popup">
+        <div class="left-popup">
+          <img src="Assets/foto profile/JATYO HSE DIVISION.jpg" alt="" />
+        </div>
+        <div class="pembatas"></div>
+        <div class="right-popup">
+          <h2 class="name">jatyo</h2>
+          <h5 class="jabatan">general manager</h5>
+          <h6 class="list">08118306388</h6>
+          <h6 class="list">anggoro@yogma-wijaya.com</h6>
+          <span class="deskripsi"
+            ><p>Speedy, Unity, Quality, that's the main thing we provide</p>
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ahir our team -->
+
+    <!--careers-->
+
+    <section id="careers">
+      <div class="careers container">
+        <div class="line"></div>
+        <div class="row mb-5">
+          <div class="image-poster col-md-7" data-aos="fade-right">
+            <img src="assets/vector/hiring.png" alt="" />
+          </div>
+          <div class="judul_careers col-md-5" data-aos="fade-left">
+            <h1>We are<span> Hiring </span>for Several Position!</h1>
+            <p><span>PT. Yogma Wijaya Kusuma</span> is a company in the field of services managed by private parties engaged in the field of Steel Construction, Building Maintenance, Supplier ,etc. ></p>
+            <p><span>PT. Yogma Wijaya Kusuma</span> growing after becoming one of subcon of PT. Takenaka Indonesia, PT. Takenaka Doboku, PT. Schneider , etc since 2000.</p>
+            <span>
+              <button class="tombol btn1" href="#">apply now</button>
+              <button class="tombol btn2" href="#">take more info</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- style tombol body  -->
+    </section>
+
+    <!-- ahir career -->
+
+    <!-- footer -->
+    <section>
+      <div class="parallax banner-footer" id="contact-us">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1>"let’s Discus About your project"</h1>
+          <p>We would love to share ideas, suggest options and answear your opinion. we're ready to work on existing projects to the fullest and best possible.</p>
+        </div>
+      </div>
+      <div class="Contact-form container-fluid">
+        <div class="left-contact">
+          <div class="slider-form">
+            <div class="slides-form">
+              <!-- radio button start -->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <!-- radio button end -->
+
+              <!-- slide image start -->
+              <div class="slide-form first">
+                <img src="Assets/free stock/buliding.jpg" alt="" />
+              </div>
+              <div class="slide-form">
+                <img src="Assets/free stock/civil.jpg" alt="" />
+              </div>
+              <div class="slide-form">
+                <img src="Assets/free stock/team.jpg" alt="" />
+              </div>
+              <div class="slide-form">
+                <img src="Assets/free stock/1.jpg" alt="" />
+              </div>
+              <!-- slide image end -->
+
+              <!-- automatomatic nav start -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!-- automatomatic nav end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation  end -->
+          </div>
+        </div>
+
+        <!-- contact from -->
+
+        <div class="right-contact">
+          <div class="title">
+            <h2>We would love to hear from you so don't hesitate to say hi!</h2>
+          </div>
+          <form name="submit-to-google-sheet">
+            <div class="input-grup">
+              <input type="text" class="input_form" placeholder=" " id="full-name" aria-describedby="name" name="fullname" />
+              <label for="full-name" class="placeholder_form">Full Name</label>
+            </div>
+            <div class="input-grup">
+              <input type="number" class="input_form" placeholder=" " id="phone-number" aria-describedby="phone-number" name="phonenumber" />
+              <label for="phone-number" class="placeholder_form">Phone Number</label>
+            </div>
+            <div class="input-grup">
+              <input type="email" class="input_form" placeholder=" " id="email" aria-describedby="email" name="email" />
+              <label for="email" class="placeholder_form">Email</label>
+            </div>
+            <div class="input-grup">
+              <textarea type="text" class="input_form2" placeholder=" " id="message" aria-describedby="message" cols="30" rows="3" name="message"></textarea>
+              <label for="message" class="placeholder_form">Message</label>
+            </div>
+            <button type="submit" class="tombol btn2">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="pembatas-atas"></div>
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-lg-5">
+            <div class="logo-footer">
+              <a href="#hero"><img src="assets/img/logo yogma.png" alt="" /></a>
+              <span>PT. Yogma Wijaya Kusuma</span>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>
+              Jln.Damai <br />
+              No.57 Rt.02/023 <br />Kp.Bulu Ds. Setia Mekar<br />
+              Tambun Bekasi
+            </p>
+            <div class="logo-phone">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <h4>+62 811-8306-388</h4>
+            </div>
+            <div class="logo-phone">
+              <a href="#"><ion-icon name="call"></ion-icon></a>
+              <h4>(021) 8835-3601</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <h4>company</h4>
+            <ul>
+              <li><a href="home yogma.html#hero">home</a></li>
+              <li><a href="home yogma.html#about-us">about us</a></li>
+              <li><a href="home yogma.html#business">business</a></li>
+              <li><a href="home yogma.html#footer">contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h4>about us</h4>
+            <ul>
+              <li><a href="history.html">history</a></li>
+              <li><a href="history.html#our-partner">our partner</a></li>
+              <li><a href="our team.html">our team</a></li>
+              <li><a href="our team.html#careers">career</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h4>business</h4>
+            <ul>
+              <li><a href="#business">service</a></li>
+              <li><a href="#business">unit location</a></li>
+              <li><a href="equipment.html">Equipmen</a></li>
+              <li><a href="project.html">project</a></li>
+            </ul>
+          </div>
+          <div class="box-translate">
+            <h6>language :</h6>
+            <span class="translate_google" id="google_translate_element"></span>
+          </div>
+        </div>
+      </div>
+      <div class="pembatas-ahir">
+        <h6>PT. Yogma Wijaya Kusuma ©2022</h6>
+
+        <div>
+          <h6>created by</h6>
+          <div class="logo-mutidimensi">
+            <img src="assets/img/LOGO MULTIDIMENSI-03.png" alt="" />
+          </div>
+
+          <span>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/syauqiarisandi/"><i class="fab fa-instagram"></i></a>
+          </span>
+          <span>
+            <a href="https://dribbble.com/multidimensi"><i class="fab fa-dribbble"></i></a>
+          </span>
+          <span>
+            <a href="https://github.com/multidimensi"><i class="fab fa-github"></i></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!--  ahir footer-->
+
+    <!-- load icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- navbar java script -->
+    <script src="js/navbar.js"></script>
+
+    <!-- my java script -->
+    <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/form footer.js"></script>
+    <script src="js/filter.js"></script>
+    <!-- google translate -->
+
+    <script text="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

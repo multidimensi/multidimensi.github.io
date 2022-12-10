@@ -1,0 +1,90 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* slide busines */
+.business-card {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0 280px;
+  align-items: center;
+  justify-content: center;
+}
+.business-card .slide {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 5%;
+  padding: 0 !important;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.business-card .slide .image-content {
+  width: 100%;
+  height: 45%;
+  padding: 0;
+}
+.business-card .slide .card-content {
+  width: 100%;
+  height: 55%;
+}
+
+.image-content img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5% 5% 0 0;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  background-color: #1e90ff;
+  color: #fff;
+}
+.card-content p {
+  width: 290px;
+  font-size: 18px;
+  color: #242424;
+  text-align: center;
+}
+
+.card-content a {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+  .business-card {
+    padding: 0 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .business-card {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1440.98px) {
+  .business-card {
+    padding: 0 60px;
+  }
+}

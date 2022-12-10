@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.tombol {
+  border: 2px solid #1e90ff;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.tombol2 {
+  border: 2px solid #fff;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1 {
+  color: #1e90ff;
+}
+.btn2 {
+  color: #fff;
+}
+.btn3 {
+  color: #fff;
+}
+
+.btn1:hover {
+  color: #fff;
+}
+.btn2:hover {
+  color: #1e90ff;
+}
+.btn3:hover {
+  color: #1e90ff;
+}
+.tombol::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #1e90ff;
+  z-index: -1;
+  transition: 0.8s;
+}
+.tombol2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #fff;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before,
+.btn2::before,
+.btn3::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn2::before {
+  height: 180%;
+}
+.btn1:hover::before {
+  height: 180%;
+}
+.btn2:hover::before {
+  height: 0%;
+}
+.btn3:hover::before {
+  height: 180%;
+}

@@ -1,0 +1,156 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7e7e7;
+}
+#hero-history {
+  margin-top: 70px;
+}
+
+.hero-history {
+  background-image: url(../Assets/img/pabrik.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  background-color: #007efc;
+  display: flex;
+  object-position: center center;
+  z-index: 10;
+}
+.hero-history h1 {
+  padding-top: 30px;
+  color: #cdcdcd;
+  font-weight: 600;
+  text-align: left;
+  font-size: 40px;
+}
+
+.hero-history span {
+  color: #242424;
+  font-weight: 800;
+}
+.hero-history p {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  max-width: 500px;
+}
+
+.line {
+  margin-top: 50px;
+  border: 1px solid #242424;
+}
+/* history */
+.judul_history h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  padding: 30px 0;
+  color: #242424;
+}
+.paragraf p {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  color: #242424;
+  padding: 30px;
+}
+.paragraf span {
+  font-weight: 700;
+}
+
+/* slider our partner  */
+.our_partner {
+  height: 330px;
+  background-color: #242424;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.judul_ourpartner {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  padding-top: 40px;
+  letter-spacing: 0.03em;
+}
+.tagline_ourpartner {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.slider {
+  height: 200px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin-top: 13px;
+}
+.slide-track {
+  display: flex;
+  width: calc(150px * 24);
+  animation: scroll 40s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 12));
+  }
+}
+
+.slide {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.slide img {
+  width: 100%;
+  transition: transform 1s;
+}
+.slide img:hover {
+  transform: translateZ(20px);
+}
+
+/* applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .judul_history h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+    color: #242424;
+  }
+  .paragraf p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #242424;
+    padding: 0 20px;
+  }
+  .paragraf span {
+    font-weight: 700;
+  }
+}

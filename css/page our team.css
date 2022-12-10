@@ -1,0 +1,334 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7e7e7;
+}
+#hero-ourteam {
+  margin-top: 70px;
+}
+
+.hero-ourteam {
+  background-image: url(../Assets/free\ stock/1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  background-color: #007efc;
+  display: flex;
+  object-position: center center;
+  z-index: 10;
+}
+.hero-ourteam h1 {
+  padding-top: 30px;
+  color: #cdcdcd;
+  font-weight: 600;
+  text-align: left;
+  font-size: 40px;
+}
+
+.hero-ourteam span {
+  color: #fff;
+  font-weight: 800;
+}
+.hero-ourteam p {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  max-width: 500px;
+}
+.judul_ourteam h1 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.judul_ourteam span {
+  color: #007efc;
+}
+.judul_careers h1 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.judul_careers p {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.judul_careers span {
+  font-weight: 700;
+}
+.button_ourteam button {
+  background-color: #242424;
+  color: #fff;
+  margin: 2px;
+}
+.button_ourteam button:hover {
+  background-color: #007efc;
+  color: #fff;
+}
+
+/* card slide */
+
+.objects {
+  width: 100%;
+  height: 600px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.our-team-list {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content {
+  margin: 0 40px;
+
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  width: 300px;
+  height: 550px;
+  border-radius: 5%;
+  display: none;
+}
+.show {
+  display: block;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card .image-content {
+  height: 35%;
+  width: 100%;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e90ff;
+  border-radius: 25px 25px 0 25px;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 6px solid #1e90ff;
+}
+
+.card .card-content {
+  width: 100%;
+  height: 65%;
+  text-align: center;
+  padding: 20px 5px 0px 5px;
+}
+.card .card-content h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #007efc;
+}
+.card .card-content h5 {
+  text-transform: capitalize;
+}
+.card .card-content h5,
+h6 {
+  color: #9d9d9d;
+}
+.card .card-content a {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+}
+
+/* swiper  */
+
+.swiper-navBtn {
+  color: #beddfd;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #007efc;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 40px;
+}
+.swiper-buton-next {
+  right: 0;
+}
+.swiper-buton-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #beddfd;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #007efc;
+}
+.swiper-pagination {
+  padding-top: 10px;
+}
+/* popup */
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.popup a {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  top: 15%;
+  right: 18%;
+}
+.content-popup {
+  width: 60%;
+  height: 70%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+  /* background-color: #242424; */
+}
+.left-popup {
+  width: 40%;
+  height: 100%;
+  border-radius: 30px;
+  /* background-color: #007efc; */
+}
+.left-popup img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  object-fit: cover;
+  object-position: center center;
+}
+.pembatas {
+  width: 5%;
+  height: 100%;
+  background-color: #1e90ff;
+}
+.right-popup {
+  width: 55%;
+  height: 100%;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 40px;
+  background-color: #fff;
+}
+.right-popup .name {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #007efc;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .content-popup {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*  career */
+.image-poster img {
+  width: 100%;
+}
+.judul_careers h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #242424;
+}
+.judul_careers h1 span {
+  color: #007efc;
+}
+.careers {
+  margin-top: 200px;
+}
+@media (max-width: 991.98px) {
+  .content-popup {
+    width: 95%;
+    height: 85%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-popup {
+    width: 100%;
+    height: 50%;
+  }
+  .left-popup img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    object-position: center center;
+  }
+  .pembatas {
+    width: 100%;
+    height: 2%;
+  }
+  .right-popup {
+    width: 100%;
+    height: 48%;
+    border-radius: 0 0 30px 30px;
+  }
+  .deskripsi {
+    overflow-y: scroll;
+  }
+  .popup a {
+    top: 93%;
+    right: 50%;
+  }
+}

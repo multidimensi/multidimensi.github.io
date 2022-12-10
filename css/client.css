@@ -1,0 +1,247 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7e7e7;
+}
+#hero-project {
+  margin-top: 70px;
+}
+
+.hero-client {
+  background-image: url(../Assets/project/1.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  background-color: #007efc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-position: center center;
+  z-index: 10;
+}
+.hero-client .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hero-client h1 {
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  color: #e7e7e7;
+  font-weight: 600;
+  line-height: 50px;
+  z-index: 10;
+
+  font-size: 40px;
+}
+.title-client h6 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: -3px;
+  letter-spacing: 5px;
+}
+
+.hero-client span {
+  color: #242424;
+  font-weight: 800;
+}
+.pembatas {
+  max-width: 80%;
+  height: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #242424;
+}
+.title-client h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #242424;
+}
+.title-client h1 span {
+  color: #1e90ff;
+}
+.content-project h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.content-project a:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+/* swiper */
+.client-galery {
+  height: 800px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-navBtn {
+  color: #beddfd;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #007efc;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 40px;
+}
+.swiper-buton-next {
+  right: 0;
+}
+.swiper-buton-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #beddfd;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #007efc;
+}
+
+/* pproject */
+.content-project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.content-project span {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.content-project span a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 1px 20px;
+  background-color: #242424;
+}
+.location,
+.year {
+  color: #fff;
+}
+.project ion-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.project-collection {
+  width: 100%;
+  display: flex;
+}
+.project-collection .year {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0 30px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e90ff;
+}
+.project-collection .project {
+  width: 80%;
+}
+.project-collection .project div {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px 30px 70px;
+}
+.paragraf1 {
+  background-color: #d6d6d6;
+}
+
+@media (max-width: 830px) {
+  .project-collection .year {
+    width: 20%;
+  }
+  .project-collection .project {
+    width: 80%;
+  }
+  .project-collection .project div {
+    font-size: 18px;
+    padding: 15px 10px 15px 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-client h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-client .overlay {
+    background-color: rgba(30, 144, 255, 0.7);
+  }
+  .client-galery {
+    height: 200px;
+  }
+  .content-project {
+    padding: 0 10px;
+  }
+  .project-collection .year {
+    width: 20%;
+  }
+  .project-collection .project {
+    width: 80%;
+  }
+  .project-collection .project div {
+    font-size: 15px;
+    padding: 10px 5px 10px 10px;
+  }
+}

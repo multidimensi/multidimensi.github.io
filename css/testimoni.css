@@ -1,0 +1,77 @@
+.card-testimoni {
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+}
+.left-content {
+  width: 30%;
+  height: 100%;
+}
+.left_content .overlay {
+  left: 0;
+  top: 0;
+  width: 27%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  background-color: #1e90ff;
+}
+.rigth-content {
+  width: 70%;
+}
+
+.profil-image {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+}
+.profil-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid #007efc;
+}
+.right_content .name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #007efc;
+}
+.right_content .jabatan {
+  font-size: 18px;
+  color: #828282;
+}
+.right_content p {
+  max-height: 100px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #242424;
+}
+.right_content a {
+  position: relative;
+  z-index: 10;
+}
+
+.judul_testimonial h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 50px 10px;
+
+}
+.judul_testimonial p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 50px 10px;
+}

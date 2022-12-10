@@ -1,0 +1,257 @@
+/* clearing css */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7e7e7;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding-top: 20px;
+}
+/* HERO SECTION STYLE*/
+
+.herobanner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../Assets/project/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: change 50s 5s infinite ease-in-out;
+}
+@keyframes change {
+  0% {
+    background-image: url(../Assets/project/1.jpg);
+  }
+  20% {
+    background-image: url(../Assets/project/1.png);
+  }
+  40% {
+    background-image: url(../Assets/project/buliding.jpg);
+  }
+  60% {
+    background-image: url(../Assets/project/civil.jpg);
+  }
+  80% {
+    background-image: url(../Assets/project/team.jpg);
+  }
+  100% {
+    background-image: url(../Assets/project/2.png);
+  }
+}
+
+.title_hero {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 104px;
+  font-weight: 800;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container .tulisan_banner span {
+  color: #1e90ff;
+}
+
+.container .tulisan_banner {
+  text-align: center;
+  margin-top: 80px;
+}
+.button-hero {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.button-hero a {
+  z-index: 10;
+}
+/* sosmed icon  */
+.sosmed {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+.logo_sosmed {
+  width: 50px;
+  padding-right: 5px;
+  display: flex;
+  cursor: pointer;
+  animation: 5s;
+}
+.logo_sosmed:last-child {
+  margin-right: 0;
+}
+.logo_sosmed:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+/* statistik card (hidden in mobile) */
+.statistik {
+  display: none;
+}
+
+/* button statistik */
+
+/*about us */
+/*about us */
+.line {
+  color: #282828;
+  border: 1px solid #282828;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.judul_about_us {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #282828;
+}
+.judul_about_us span {
+  color: #828282;
+}
+
+.isi_about_us {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.isi_about_us span {
+  font-weight: 700;
+}
+
+/* vision mission */
+
+.visi-misi {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vision {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 60px 40px;
+}
+.mission {
+  width: 100%;
+  height: 500px;
+  background-color: #1e90ff;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.vision img,
+.mission img {
+  position: absolute;
+  width: 80px;
+  margin-top: -30px;
+  margin-left: 0;
+}
+
+.vision .content,
+.mission .content {
+  max-width: 400px;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.vision h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e90ff;
+  margin: 10px 0;
+}
+.vision p {
+  max-width: 250;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1e90ff;
+  margin: 10px 0;
+}
+.mission h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin: 10px 0;
+}
+.mission p {
+  max-width: 250;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0;
+}
+
+/* busines */
+.judul_business h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #242424;
+  text-align: center;
+}
+.judul_business p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 50px 10px;
+}
+.judul_business p span {
+  font-weight: 700;
+}
+.business_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.business_button a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* project */
+
+/* heading project */
+.judul_project h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.3px;
+  padding: 20px;
+  color: #242424;
+}
+.judul_project span {
+  color: #1e90ff;
+}
+
+/* /testimonial */
