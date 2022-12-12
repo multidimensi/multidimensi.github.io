@@ -183,9 +183,7 @@ body {
 .input-grup {
   position: relative;
   width: 80%;
-}
-.input-grup:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .input_form {
@@ -263,7 +261,7 @@ body {
   flex-direction: row;
 }
 .pembatas-ahir div h6 {
-  margin-right: 10px;
+  margin-right: 2px;
 }
 .pembatas-ahir span {
   position: relative;
@@ -282,6 +280,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 .logo-mutidimensi img {
   width: 100%;
@@ -405,6 +404,11 @@ body {
   #footer p {
     text-align: center;
   }
+  .input-grup {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
   .Contact-form {
     flex-direction: column;
   }
@@ -437,8 +441,9 @@ body {
   .banner-footer .container p {
     font-size: 16px;
   }
-  .input-grup:not(:last-child) {
-    margin-bottom: 0px;
+  .input-grup {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .right-contact h2 {
     font-size: 30px;

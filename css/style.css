@@ -61,6 +61,9 @@ section {
   font-weight: 800;
   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
+.title_hero span {
+  color: #1e90ff;
+}
 
 .container .tulisan_banner span {
   color: #1e90ff;

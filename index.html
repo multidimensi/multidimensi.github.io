@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +49,7 @@
       <div class="navbar" id="navbar">
         <i class="bx bx-menu"></i>
         <div class="logo">
-          <a href="home yogma.html">
+          <a href="index.html">
             <img src="Assets/img/logo yogma.png" alt="" />
             <span> PT.Yogma Wijaya Kusuma </span></a
           >
@@ -60,21 +61,21 @@
           </div>
           <ul class="links">
             <li>
-              <a href="home yogma.html#about-us">ABOUT US</a>
+              <a href="index.html#about-us">ABOUT US</a>
               <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
               <ul class="htmlCss-sub-menu sub-menu">
                 <li><a href="history.html">history</a></li>
-                <li><a href="our team.html">Meet our Team</a></li>
+                <li><a href="our-team.html">Meet our Team</a></li>
 
                 <li class="more">
                   <span
-                    ><a href="our team.html#careers">Career</a>
+                    ><a href="our-team.html#careers">Career</a>
                     <i class="bx bxs-chevron-right arrow more-arrow"></i>
                   </span>
                   <ul class="more-sub-menu sub-menu">
-                    <li><a href="our team.html#careers">Internship</a></li>
-                    <li><a href="our team.html#careers">Fresh graduate</a></li>
-                    <li><a href="our team.html#careers">Propesional</a></li>
+                    <li><a href="our-team.html#careers">Internship</a></li>
+                    <li><a href="our-team.html#careers">Fresh graduate</a></li>
+                    <li><a href="our-team.html#careers">Propesional</a></li>
                   </ul>
                 </li>
               </ul>
@@ -83,8 +84,8 @@
               <a href="#business">BUSINESS</a>
               <i class="bx bxs-chevron-down js-arrow arrow"></i>
               <ul class="js-sub-menu sub-menu">
-                <li><a href="home yogma.html#business">SERVICE</a></li>
-                <li><a href="home yogma.html#business">busines unit location</a></li>
+                <li><a href="index.html#business">SERVICE</a></li>
+                <li><a href="index.html#business">busines unit location</a></li>
                 <li><a href="#">Equipmen & facility </a></li>
                 <li><a href="project.html">Project list</a></li>
               </ul>
@@ -137,7 +138,7 @@
     <!-- hero section -->
     <section id="hero" class="herobanner container-fluid">
       <div class="overlay"></div>
-      <div class="statistik" id="statistik" data-aos="fade-left">
+      <div class="statistik" id="statistik">
         <div class="statistik-table">
           <h1 class="Info_statistik">3200/<span>User</span></h1>
           <p class="penjelasan_statistik">3200 pengunjung pada website ini</p>
@@ -158,7 +159,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="title_hero" data-aos="fade-right">
+            <h1 class="title_hero" data-aos="fade-down">
               <span>SCIENTISTS</span> DREAM ABOUT <br />
               DOING GREAT THINGS,<br />
               <span>ENGINEERS</span> DO THEM.
@@ -166,8 +167,8 @@
           </div>
         </div>
         <div class="button-hero">
-          <a href="#contact-us" data-aos="fade-right"> <button class="tombol2 btn3">send mail</button></a>
-          <a href="#" data-aos="fade-left"> <button class="tombol btn2">contact sales</button></a>
+          <a href="#contact-us" data-aos="fade-down"> <button class="tombol2 btn3">send mail</button></a>
+          <a href="#" data-aos="fade-down"> <button class="tombol btn2">contact sales</button></a>
         </div>
         <div class="sosmed container" data-aos="fade-up">
           <a href="#"><img class="logo_sosmed" src="assets/img/facebook.png" alt="" /></a>
@@ -186,8 +187,8 @@
       <div class="container">
         <div class="line"></div>
         <div class="row mb-5">
-          <div class="judul_about_us col-md-5 mb-3" data-aos="fade-right">ABOUT <span>US</span></div>
-          <div class="isi_about_us col-md-7" data-aos="fade-left">
+          <div class="judul_about_us col-md-5 mb-3" data-aos="fade-up">ABOUT <span>US</span></div>
+          <div class="isi_about_us col-md-7" data-aos="fade-up">
             <p><span>PT. Yogma Wijaya Kusuma</span> is a company in the field of services managed by private parties engaged in the field of Steel Construction, Building Maintenance, Supplier ,etc. ></p>
             <p><span>PT. Yogma Wijaya Kusuma</span> growing after becoming one of subcon of PT. Takenaka Indonesia, PT. Takenaka Doboku, PT. Schneider , etc since 2000.</p>
           </div>
@@ -203,7 +204,7 @@
           <div class="content">
             <h5 data-aos="fade-down">our amazing team</h5>
             <h1 data-aos="fade-up">Team Work Makes Dream Work</h1>
-            <a href="our team.html#hero-ourteam" data-aos="fade-up"> <button class="tombol btn2">see our amazing team</button></a>
+            <a href="our-team.html#hero-ourteam" data-aos="fade-up"> <button class="tombol btn2">see our amazing team</button></a>
           </div>
           <div class="slider-banner">
             <img id="slidebanner1" src="Assets/free stock/buliding.jpg" alt="" />
@@ -224,16 +225,16 @@
     <section>
       <div id="vision-misiion" class="visi-misi continerfluid">
         <div class="vision">
-          <img src="assets/img/icon visi.png" alt="" data-aos="fade-right" />
-          <div class="content" data-aos="fade-right">
+          <img src="assets/img/icon visi.png" alt="" data-aos="fade-down" />
+          <div class="content" data-aos="fade-up">
             <h1>VISION</h1>
             <p>Being a leading national private companies in the construction industry , providing welfare to employees,the board,through a commitment to good corporate governance.</p>
             <a href="history.html"> <button class="tombol btn2">company history</button></a>
           </div>
         </div>
         <div class="mission">
-          <img src="assets/img/icon misi.png" alt="" data-aos="fade-left" />
-          <div class="content" data-aos="fade-left">
+          <img src="assets/img/icon misi.png" alt="" data-aos="fade-down" />
+          <div class="content" data-aos="fade-up">
             <h1>MISIION</h1>
             <p>
               Always maintain a commitment to provide customer satisfaction with the attention to quality the right price and the right time job on every project that was done , as well as providing employment opportunities to the human
@@ -250,7 +251,7 @@
       <div class="container">
         <div class="line"></div>
         <div class="row mb-5 justify-content-between">
-          <div class="judul_business col-md-6 mb-3" data-aos="fade-right">
+          <div class="judul_business col-md-6 mb-3" data-aos="fade-down">
             <h1>BUSINESS</h1>
             <p>
               <span>PT. Yogma Wijaya Kusuma</span> is a service company managed by a private party engaged in Steel Construction, Building Maintenance, Supplier, etc. Pt. Yogma Wijaya Kusuma is growing after becoming a subcon of PT.
@@ -328,7 +329,7 @@
       </div>
       <div class="container mt-5">
         <div class="row justify-content-between">
-          <div class="judul_testimonial col-md-5" data-aos="fade-right">
+          <div class="judul_testimonial col-md-5" data-aos="fade-up">
             <h1>Certificate & Legalization</h1>
             <p>
               PT Yogma Wijaya Kusuma has received several ISO certifications which have made us an international standard company, have a good image in the business community and technically, of course, the production implementation has
@@ -410,7 +411,7 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2018 Repair Jetty Fender, lampung/4.jpg" alt="" />
             </div>
@@ -421,7 +422,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2018-Cleanup Existing Bio/3.jpg" alt="" />
             </div>
@@ -432,7 +433,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2018-Replace Broken Drainage/1.jpg" alt="" />
             </div>
@@ -443,7 +444,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2019-Construct New Bark Storage 2/3.jpg" alt="" />
             </div>
@@ -454,7 +455,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2020 -Construct ESP 3 Foundation and Electrical/2.png" alt="" />
             </div>
@@ -465,7 +466,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2020- G3 COOKING/3.jpg" alt="" />
             </div>
@@ -476,7 +477,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2020-Construct container yard, lampung/13.jpg" alt="" />
             </div>
@@ -487,7 +488,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a class="card-project" href="project TEL.html">
+          <a class="card-project" href="project-TEL.html">
             <div class="content-image">
               <img src="assets/project/ Pulp And Paper/2020-Repair crew rest area & Radio Room, lampung/9.jpg" alt="" />
             </div>
@@ -581,7 +582,7 @@
               <input type="email" class="input_form" placeholder=" " id="email" aria-describedby="email" name="email" />
               <label for="email" class="placeholder_form">Email</label>
             </div>
-            <div class="input-grup">
+            <div class="input-grup mb-0">
               <textarea type="text" class="input_form2" placeholder=" " id="message" aria-describedby="message" cols="30" rows="3" name="message"></textarea>
               <label for="message" class="placeholder_form">Message</label>
             </div>
@@ -624,10 +625,10 @@
           <div class="col-lg-2">
             <h4>company</h4>
             <ul>
-              <li><a href="home yogma.html#hero">home</a></li>
-              <li><a href="home yogma.html#about-us">about us</a></li>
-              <li><a href="home yogma.html#business">business</a></li>
-              <li><a href="home yogma.html#footer">contact us</a></li>
+              <li><a href="index.html#hero">home</a></li>
+              <li><a href="index.html#about-us">about us</a></li>
+              <li><a href="index.html#business">business</a></li>
+              <li><a href="index.html#footer">contact us</a></li>
             </ul>
           </div>
           <div class="col-lg-2">
@@ -635,8 +636,8 @@
             <ul>
               <li><a href="history.html">history</a></li>
               <li><a href="history.html#our-partner">our partner</a></li>
-              <li><a href="our team.html">our team</a></li>
-              <li><a href="our team.html#careers">career</a></li>
+              <li><a href="our-team.html">our team</a></li>
+              <li><a href="our-team.html#careers">career</a></li>
             </ul>
           </div>
           <div class="col-lg-2">
@@ -656,11 +657,10 @@
       </div>
       <div class="pembatas-ahir">
         <h6>PT. Yogma Wijaya Kusuma ©2022</h6>
-
         <div>
           <h6>created by</h6>
           <div class="logo-mutidimensi">
-            <img src="assets/img/LOGO MULTIDIMENSI-03.png" alt="" />
+            <img src="assets/img/LOGO MULTIDIMENSI.jpg" alt="" />
           </div>
 
           <span>
@@ -687,6 +687,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- jquary script -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
