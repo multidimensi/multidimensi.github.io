@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- My Style  -->
     <link rel="stylesheet" href="css/client.css" />
-
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <!-- Logo Title Bar -->
@@ -38,6 +38,11 @@
     <title>client | PT. Yogma Wijaya kusuma</title>
   </head>
   <body>
+    <!-- loader -->
+    <div class="loader" id="preloader">
+      <img src="assets/img/logo yogma biru.png" alt="" />
+      <div class="spinner"></div>
+    </div>
     <!-- navbar -->
     <nav>
       <div class="navbar" id="navbar">
@@ -56,17 +61,28 @@
           <ul class="links">
             <li>
               <a href="index.html#about-us">ABOUT US</a>
-              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-              <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="history.html">history</a></li>
-                <li><a href="our-team.html">Meet our Team</a></li>
-
+              <i class="bx bxs-chevron-down aboutus-arrow arrow"></i>
+              <ul class="aboutus-sub-menu sub-menu">
+                <li><a href="history.html">Company History</a></li>
                 <li class="more">
                   <span
-                    ><a href="our-team.html#careers">Career</a>
+                    ><a href="how-we-work.html">How We Work</a>
                     <i class="bx bxs-chevron-right arrow more-arrow"></i>
                   </span>
                   <ul class="more-sub-menu sub-menu">
+                    <li><a href="how-we-work.html#">Savety & Environtment</a></li>
+                    <li><a href="how-we-work.html#">exemplarity</a></li>
+                    <li><a href="how-we-work.html#">unity & shcedule</a></li>
+                  </ul>
+                </li>
+                <li><a href="history.html#">Our Comitment</a></li>
+                <li><a href="our-team.html">Meet our Team</a></li>
+                <li class="more">
+                  <span
+                    ><a href="our-team.html#careers">Career</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow2"></i>
+                  </span>
+                  <ul class="more-sub-menu2 sub-menu">
                     <li><a href="our-team.html#careers">Internship</a></li>
                     <li><a href="our-team.html#careers">Fresh graduate</a></li>
                     <li><a href="our-team.html#careers">Propesional</a></li>
@@ -78,9 +94,20 @@
               <a href="#business">BUSINESS</a>
               <i class="bx bxs-chevron-down js-arrow arrow"></i>
               <ul class="js-sub-menu sub-menu">
-                <li><a href="index.html#business">SERVICE</a></li>
-                <li><a href="index.html#business">busines unit location</a></li>
-                <li><a href="#">Equipmen & facility </a></li>
+                <li class="more">
+                  <span
+                    ><a href="our-service.html">our service</a>
+                    <i class="bx bxs-chevron-right arrow more-arrow3"></i>
+                  </span>
+                  <ul class="more-sub-menu3 sub-menu">
+                    <li><a href="our-service.html#civil-structure">Civil Structure </a></li>
+                    <li><a href="our-service.html#civil-maintenance">Civil Maintenance </a></li>
+                    <li><a href="our-service.html#steel-structure">Steel Structure </a></li>
+                    <li><a href="our-service.html#steel-maintenance">Steel Maintenance </a></li>
+                  </ul>
+                </li>
+                <li><a href="business-location.html">busines unit location</a></li>
+                <li><a href="equipment.html">Equipment & Inventory </a></li>
                 <li><a href="project.html">Project list</a></li>
               </ul>
             </li>
@@ -113,20 +140,19 @@
           <div>
             <a class="buttoninformation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <span class="buttoninformation__icon">
-                <img src="assets/img/info.png" alt="" />
+                <i class="fa-solid fa-circle-info"></i>
               </span>
             </a>
           </div>
           <div class="search-box">
             <i class="bx bx-search"></i>
-            <div class="input-box">
-              <input type="text" placeholder="Search..." />
-            </div>
+            <form class="input-box" id="search-form">
+              <input type="text" id="search-input" placeholder="Search..." />
+            </form>
           </div>
         </div>
       </div>
     </nav>
-
     <!-- Ahir navbar -->
 
     <!-- hero section -->
@@ -521,9 +547,11 @@
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <p>
-              Jln.Damai <br />
-              No.57 Rt.02/023 <br />Kp.Bulu Ds. Setia Mekar<br />
-              Tambun Bekasi
+              <a href="https://www.google.com/maps/place/PT.YOGMA+WIJAYA+KUSUMA/@-6.251158,107.0488139,17z/data=!3m1!4b1!4m5!3m4!1s0x2e698e557880f5bb:0xad178e943654a66b!8m2!3d-6.2511719!4d107.0510684">
+                Jln.Damai <br />
+                No.57 Rt.02/023 <br />Kp.Bulu Ds. Setia Mekar<br />
+                Tambun Bekasi</a
+              >
             </p>
             <div class="logo-phone">
               <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
@@ -548,7 +576,8 @@
             <h4>about us</h4>
             <ul>
               <li><a href="history.html">history</a></li>
-              <li><a href="history.html#our-partner">our partner</a></li>
+              <li><a href="history.html#our-partner">our comitment</a></li>
+              <li><a href="history.html#our-partner">how we work</a></li>
               <li><a href="our-team.html">our team</a></li>
               <li><a href="our-team.html#careers">career</a></li>
             </ul>
@@ -556,8 +585,8 @@
           <div class="col-lg-2">
             <h4>business</h4>
             <ul>
-              <li><a href="#business">service</a></li>
-              <li><a href="#business">unit location</a></li>
+              <li><a href="our-service.html">our service</a></li>
+              <li><a href="business-location.html">business location</a></li>
               <li><a href="equipment.html">Equipmen</a></li>
               <li><a href="project.html">project</a></li>
             </ul>
@@ -570,7 +599,6 @@
       </div>
       <div class="pembatas-ahir">
         <h6>PT. Yogma Wijaya Kusuma ©2022</h6>
-
         <div>
           <h6>created by</h6>
           <div class="logo-mutidimensi">
@@ -593,6 +621,8 @@
       </div>
     </footer>
     <!--  ahir footer-->
+    <!-- loader -->
+    <script src="js/preloader.js"></script>
 
     <!-- load icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -612,6 +642,7 @@
     <script src="js/form footer.js"></script>
     <script src="js/language.js"></script>
     <script src="js/client slide copy.js"></script>
+    <script src="js/search-bar.js"></script>
 
     <!-- my java script -->
     <script src="js/script.js"></script>
