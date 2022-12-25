@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1737560/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp business-location.html $DEPLOYPATH
+    - /bin/cp equipment.html $DEPLOYPATH
+    - /bin/cp history.html $DEPLOYPATH
+    - /bin/cp how-we-work.html $DEPLOYPATH
+    - /bin/cp our-service.html $DEPLOYPATH
+    - /bin/cp our-team.html $DEPLOYPATH
+    - /bin/cp project-epson.html $DEPLOYPATH
+    - /bin/cp project-TEL.html $DEPLOYPATH
+    - /bin/cp project.html $DEPLOYPATH
+    - /bin/cp -R Assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
