@@ -12,6 +12,6 @@ deployment:
     - /bin/cp project-epson.html $DEPLOYPATH
     - /bin/cp project-TEL.html $DEPLOYPATH
     - /bin/cp project.html $DEPLOYPATH
-    - /bin/cp -R Assets $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH

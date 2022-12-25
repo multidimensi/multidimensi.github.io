@@ -15,7 +15,7 @@ body {
 }
 
 .hero-project {
-  background-image: url(../Assets/project/1.png);
+  background-image: url(../img/project/1.png);
   background-size: cover;
   background-position: center;
   height: 50vh;

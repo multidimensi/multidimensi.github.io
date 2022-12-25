@@ -7,7 +7,7 @@ body {
 }
 
 .hero-equipment {
-  background-image: url(../Assets/img/equiment.jpg);
+  background-image: url(../img/img/equiment.jpg);
   background-size: cover;
   background-position: center;
   height: 50vh;

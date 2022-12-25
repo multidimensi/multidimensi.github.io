@@ -26,7 +26,7 @@ section {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-image: url(../Assets/project/1.jpg);
+  background-image: url(../img/project/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -34,22 +34,22 @@ section {
 }
 @keyframes change {
   0% {
-    background-image: url(../Assets/project/1.jpg);
+    background-image: url(../img/project/1.jpg);
   }
   20% {
-    background-image: url(../Assets/project/1.png);
+    background-image: url(../img/project/1.png);
   }
   40% {
-    background-image: url(../Assets/project/buliding.jpg);
+    background-image: url(../img/project/buliding.jpg);
   }
   60% {
-    background-image: url(../Assets/project/civil.jpg);
+    background-image: url(../img/project/civil.jpg);
   }
   80% {
-    background-image: url(../Assets/project/team.jpg);
+    background-image: url(../img/project/team.jpg);
   }
   100% {
-    background-image: url(../Assets/project/2.png);
+    background-image: url(../img/project/2.png);
   }
 }
 
