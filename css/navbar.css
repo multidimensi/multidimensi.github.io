@@ -411,7 +411,7 @@ nav .navbar .links li:hover .js-sub-menu {
     transform: rotate(90deg);
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 575.98px) {
   nav .navbar .nav-links {
     max-width: 100%;
   }

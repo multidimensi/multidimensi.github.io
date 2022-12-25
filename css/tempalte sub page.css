@@ -12,37 +12,87 @@ body {
 }
 #hero-history {
   margin-top: 70px;
+  margin-bottom: 150px;
 }
 
 .hero-history {
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
+  background-color: #242424 !important;
+  height: 60vh;
+  margin-top: 70px;
+  display: grid;
   position: relative;
-  background-color: #007efc;
-  display: flex;
-  object-position: center center;
+  box-sizing: border-box;
+
   z-index: 10;
 }
-.hero-history h1 {
-  padding-top: 30px;
-  color: #cdcdcd;
-  font-weight: 600;
-  text-align: left;
-  font-size: 40px;
-}
+#app {
+  /* // opacity: 0 !important; */
+  /* // visibility: hidden; */
 
-.hero-history span {
-  color: #242424;
-  font-weight: 800;
+  z-index: 50;
 }
-.hero-history p {
+#app {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* background: #ede8e2; */
   color: #fff;
-  font-size: 18px;
-  padding: 10px 0;
-  max-width: 500px;
+}
+#app::after {
+  content: '';
+  position: absolute;
+  height: 90%;
+  width: 40%;
+  right: 10%;
+  bottom: -10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../Assets/project/8.jpg);
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.4);
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+/*  */
+
+#app .title {
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+  z-index: 2;
 }
 
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.judul1,
+.judul2,
+.judul3 {
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+.judul3 {
+  color: #1e90ff;
+}
+
+@keyframes image-in {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/*  */
 .line {
   margin-top: 50px;
   border: 1px solid #242424;
@@ -67,7 +117,28 @@ body {
 }
 
 /* applies to small devices (landscape phones, less than 768px) */
+
+@media (max-width: 991.98px) {
+  #app {
+    align-items: flex-start;
+  }
+  #app .title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  #app::after {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    right: 10%;
+    bottom: -10%;
+  }
+}
 @media (max-width: 767.98px) {
+  #app .title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
   .judul_history h1 {
     font-size: 40px;
     font-weight: 700;
@@ -75,6 +146,13 @@ body {
     padding: 30px 0;
     color: #242424;
   }
+  #app::after {
+    width: 100%;
+    height: 60%;
+    left: 0;
+    bottom: -10%;
+  }
+
   .paragraf p {
     font-size: 18px;
     text-align: center;
