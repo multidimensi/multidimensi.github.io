@@ -44,3 +44,12 @@ let moreArrow3 = document.querySelector('.more-arrow3');
 moreArrow3.onclick = function () {
   navLinks.classList.toggle('show5');
 };
+
+function showAlert() {
+  swal({
+    title: 'Good job!',
+    text: 'Please Contact us in (021) 8835-3601 /(+62) 811-8306-388 ',
+    icon: 'success',
+    button: 'Aww yiss!',
+  });
+}

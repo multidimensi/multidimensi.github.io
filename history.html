@@ -78,8 +78,10 @@
                   </span>
                   <ul class="more-sub-menu sub-menu">
                     <li><a href="how-we-work.html#savety-environtment">Savety & Environtment</a></li>
-                    <li><a href="how-we-work.html#Exemplarity">exemplarity</a></li>
-                    <li><a href="how-we-work.html#unity-shcedule">unity & shcedule</a></li>
+                    <li><a href="how-we-work.html#prepare">Preparation</a></li>
+                    <li><a href="how-we-work.html#pengukuran">Measurement</a></li>
+                    <li><a href="how-we-work.html#pabrikasi">Material Manufacturing</a></li>
+                    <li><a href="how-we-work.html#dokumentasi">Documentation</a></li>
                   </ul>
                 </li>
                 <li><a href="history.html#comitment">Our Comitment</a></li>
@@ -160,6 +162,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Ahir navbar -->
 
     <!-- hero section -->
@@ -279,6 +282,79 @@
     </section>
     <!-- ahir history  -->
 
+    <!-- comitment -->
+    <section>
+      <div class="container mb-5" id="comitment">
+        <div class="line"></div>
+        <div class="judul_history col-md-4 mb-3" data-aos="fade-up">
+          <h1>OUR COMITMENT</h1>
+        </div>
+        <div class="mb-5">
+          <div class="header">CULTURAL</div>
+          <div class="row">
+            <div class="card">
+              <h4>Professional</h4>
+              <p>Work on basic competence, commitment and sense of responsibility to produce the best performance</p>
+            </div>
+            <div class="card">
+              <h4>Integrity</h4>
+              <p>Think, speak and act consistently according to the code of ethics, moral principles and regulations</p>
+            </div>
+            <div class="card">
+              <h4>Loyalty</h4>
+              <p>Loyalty, obedience and pride in the organization based on sincerity and responsibility to realize the organization's vision and mission.</p>
+            </div>
+            <div class="card">
+              <h4>Innovative</h4>
+              <p>Trying to face the challenges of change with a creative and visionary mindset in order to realize a better, faster and more precise work process.</p>
+            </div>
+            <div class="card">
+              <h4>Synergy</h4>
+              <p>Building harmonious and productive collaborations to produce quality and useful work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5" id="ethics">
+          <div class="header">ETHICS</div>
+          <div class="row">
+            <div class="card">
+              <h4>Rules of Working Hours</h4>
+              <p>All employees and workforce of PT YOGMA are disciplined in terms of hours of entry and hours of return from work, namely starting at 08.00 for going to work and 17.00 for hours after work.</p>
+            </div>
+            <div class="card">
+              <h4>Greetings, Reprimands, Greetings</h4>
+              <p>
+                All employees and workforce of PT YOGMA are very dedicated to doing 3 things, namely Greetings, Reprimands, Greetings, in order to respect and maintain harmony between employees and employees and employees with the
+                workforce.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Elements of Communication: In terms of communication, employees and workforce are required to do the following 3 things, namely</h4>
+              <p>1. Reporting - In this condition all employees and workforce are required to report work progress if there are problems while carrying out and executing work can be immediately looking for the best solution.</p>
+              <p>
+                2. Contact: All employees and workforce are required to contact their superiors and/or other co-workers regarding their respective work schedules, in order to prevent vacancies in the position of the employee or workforce
+                occupied.
+              </p>
+              <p>3. Consultation: Both employees and workers are required to carry out consultations when faced with problems or obstacles under any circumstances.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5" id="curtural">
+          <div class="header">CULTURAL</div>
+          <div class="row">
+            <div class="card">
+              <h4></h4>
+              <p>
+                All employees and workforce receive the same compliance treatment starting from work entry hours, work leave hours and work permits. In addition, occupational safety and health is highly encouraged during toolbox meetings,
+                because without complete safety equipment, all employees and workers working in the field are not allowed to enter the area. In addition, all employees and workforce are always encouraged to preserve the surrounding
+                environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
     <section>
       <div class="parallax banner-footer" id="contact-us">
@@ -301,16 +377,16 @@
 
               <!-- slide image start -->
               <div class="slide-form first">
-                <img src="img/free stock/buliding.jpg" alt="" />
+                <img src="img/our service/steel maintenance/1.jpg" alt="" />
               </div>
               <div class="slide-form">
-                <img src="img/free stock/civil.jpg" alt="" />
+                <img src="img/our service/civil maintenance/2.jpg" alt="" />
               </div>
               <div class="slide-form">
-                <img src="img/free stock/team.jpg" alt="" />
+                <img src="img/our service/civil structure/40.jpg" alt="" />
               </div>
               <div class="slide-form">
-                <img src="img/free stock/1.jpg" alt="" />
+                <img src="img/our service/civil structure/43.jpg" alt="" />
               </div>
               <!-- slide image end -->
 
@@ -353,11 +429,11 @@
               <input type="email" class="input_form" placeholder=" " id="email" aria-describedby="email" name="email" />
               <label for="email" class="placeholder_form">Email</label>
             </div>
-            <div class="input-grup">
+            <div class="input-grup mb-0">
               <textarea type="text" class="input_form2" placeholder=" " id="message" aria-describedby="message" cols="30" rows="3" name="message"></textarea>
               <label for="message" class="placeholder_form">Message</label>
             </div>
-            <button type="submit" class="tombol btn2">send</button>
+            <button onclick="showAlert()" type="submit" class="tombol btn2">send</button>
           </form>
         </div>
       </div>
@@ -476,8 +552,10 @@
 
     <!-- my java script -->
     <script src="js/script.js"></script>
-    <!-- google translate -->
 
+    <!-- alerts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- google translate -->
     <script text="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

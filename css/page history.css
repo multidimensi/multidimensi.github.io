@@ -134,7 +134,53 @@ body {
   transform: translateZ(20px);
 }
 
+/* comitment */
+#comitment .header {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: #242424;
+  border-radius: 5px;
+}
+#comitment .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#comitment .row .card {
+  min-height: 250px;
+  width: 31%;
+  background-color: #007efc;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+.row .card h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#ethics .row .card {
+  min-height: 250px;
+  width: 46%;
+}
+#curtural .row .card {
+  width: 90%;
+}
+
 /* applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 900px) {
+  #comitment .row .card {
+    width: 47%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .judul_history h1 {
     font-size: 40px;
@@ -152,5 +198,9 @@ body {
   }
   .paragraf span {
     font-weight: 700;
+  }
+  #comitment .row .card {
+    width: 95%;
+    margin-right: 0;
   }
 }

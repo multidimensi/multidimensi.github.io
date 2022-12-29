@@ -115,7 +115,16 @@ body {
 .paragraf span {
   font-weight: 700;
 }
-
+.page .data {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .data img {
+  width: 100%;
+}
 /* applies to small devices (landscape phones, less than 768px) */
 
 @media (max-width: 991.98px) {

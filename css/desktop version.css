@@ -41,6 +41,7 @@ body {
     justify-content: left;
     margin-top: -50px;
     margin-left: 0;
+    z-index: 10;
   }
   .logo_sosmed {
     width: 60px;

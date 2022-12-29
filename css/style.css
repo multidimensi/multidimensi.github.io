@@ -26,33 +26,36 @@ section {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-image: url(../img/project/1.jpg);
+  background-image: url(../img/foto\ halaman\ depan/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   animation: change 50s 5s infinite ease-in-out;
 }
+
 @keyframes change {
   0% {
-    background-image: url(../img/project/1.jpg);
+    background-image: url(../img/foto\ halaman\ depan/1.jpg);
   }
   20% {
-    background-image: url(../img/project/1.png);
+    background-image: url(../img/foto\ halaman\ depan/2.jpg);
   }
   40% {
-    background-image: url(../img/project/buliding.jpg);
+    background-image: url(../img/foto\ halaman\ depan/3.jpg);
   }
   60% {
-    background-image: url(../img/project/civil.jpg);
+    background-image: url(../img/foto\ halaman\ depan/4.jpg);
   }
   80% {
-    background-image: url(../img/project/team.jpg);
+    background-image: url(../img/foto\ halaman\ depan/5.jpg);
   }
   100% {
-    background-image: url(../img/project/2.png);
+    background-image: url(../img/foto\ halaman\ depan/1.jpg);
   }
 }
-
+.herobanner .container {
+  z-index: 10;
+}
 .title_hero {
   color: #fff;
   text-align: center;
