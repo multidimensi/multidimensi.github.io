@@ -8,7 +8,7 @@ setInterval(function () {
 }, 5000);
 
 // contact form
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxovYLTMaAL-4D7ujlRmiP9Ph_GQqHNc1c01RO83MsvRpV_t0v6hd7RwP5KuQaGqqapDA/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzhzYFr03b87tT6xTDwLkCAng5tWnHJNujmDLX3jNB-2iqumSzPuZ2dB0q3tqjP_hEDtQ/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', (e) => {
