@@ -148,15 +148,15 @@ body {
 .tab-content .image-content {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .tab-content .image-content .image {
   background-color: #fff;
   position: relative;
-  flex: 30%;
-  max-width: 400px;
-  margin: 10px;
+  max-width: 90%;
+  height: 300px;
+  margin: 10px 0px 30px 10px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -166,8 +166,12 @@ body {
   object-fit: cover;
   background-position: center center;
 }
+.image-content h6 {
+  text-align: center;
+  margin-top: 5px;
+}
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
   .hero-equipment .overlay {
     background: rgba(30, 144, 255, 0.8);
   }
@@ -204,9 +208,8 @@ body {
   .yooo .kanan {
     width: 70%;
   }
-  .tab-content .image-content .image {
-    flex: 100%;
-    max-width: 300px;
+  .tab-content .image-content {
+    flex-direction: column;
   }
   .tab-content {
     padding: 0 50px;
@@ -245,6 +248,12 @@ body {
     font-size: 16px;
   }
   .tab-content p {
+    font-size: 14px;
+  }
+  .tab-content .image-content .image {
+    height: 150px;
+  }
+  .image-content h6 {
     font-size: 14px;
   }
 }

@@ -56,6 +56,7 @@ nav .navbar {
   /* background: red; */
   padding: 0 50px;
 }
+
 .navbar .logo span {
   font-size: 18px;
   font-weight: 600;
@@ -153,6 +154,27 @@ nav .navbar .links li:hover .js-sub-menu {
 .links li .sub-menu .more:hover .more-sub-menu2,
 .links li .sub-menu .more:hover .more-sub-menu3 {
   display: block;
+}
+
+/* iso info */
+.iso-info {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.logo-iso {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+.logo-iso img {
+  width: 100%;
 }
 
 /* button information */
@@ -299,6 +321,16 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 
+@media (max-width: 900px) {
+  .iso-info {
+    width: 80px;
+    column-gap: 5px;
+  }
+  .logo-iso {
+    width: 30px;
+  }
+}
+
 @media (max-width: 800px) {
   nav {
     /* position: relative; */
@@ -414,5 +446,8 @@ nav .navbar .links li:hover .js-sub-menu {
 @media (max-width: 575.98px) {
   nav .navbar .nav-links {
     max-width: 100%;
+  }
+  .iso-info {
+    display: none;
   }
 }

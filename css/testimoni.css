@@ -1,5 +1,11 @@
+.testimoni_card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
 .card-testimoni {
-  max-width: 500px;
+  max-width: 31%;
   max-height: 350px;
   border-radius: 20px;
   display: flex;
@@ -64,14 +70,28 @@
   z-index: 10;
 }
 
-.judul_testimonial h1{
-    font-size: 35px;
-    font-weight: 600;
-    margin: 50px 10px;
-
+.judul_testimonial h1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 50px 10px;
 }
-.judul_testimonial p{
-    font-size: 18px;
-    font-weight: 500;
-    margin: 50px 10px;
+.judul_testimonial p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 50px 10px;
+}
+@media (max-width: 900px) {
+  .testimoni_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-testimoni {
+    max-width: 70%;
+  }
+}
+@media (max-width: 575.98px) {
+  .card-testimoni {
+    max-width: 100%;
+  }
 }
