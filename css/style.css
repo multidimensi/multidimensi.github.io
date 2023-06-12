@@ -30,27 +30,42 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  animation: change 50s 5s infinite ease-in-out;
+  animation: change 100s 10s infinite ease-in-out;
 }
 
 @keyframes change {
   0% {
     background-image: url(../img/foto\ halaman\ depan/1.jpg);
   }
-  20% {
+  10% {
     background-image: url(../img/foto\ halaman\ depan/2.jpg);
   }
-  40% {
+  20% {
     background-image: url(../img/foto\ halaman\ depan/3.jpg);
   }
-  60% {
+  30% {
     background-image: url(../img/foto\ halaman\ depan/4.jpg);
   }
-  80% {
+  40% {
     background-image: url(../img/foto\ halaman\ depan/5.jpg);
   }
-  100% {
+  50% {
     background-image: url(../img/foto\ halaman\ depan/1.jpg);
+  }
+  60% {
+    background-image: url(../img/Foto\ Bagian\ Beranda/1.jpeg);
+  }
+  70% {
+    background-image: url(../img/Foto\ Bagian\ Beranda/2.jpeg);
+  }
+  80% {
+    background-image: url(../img/Foto\ Bagian\ Beranda/3.jpeg);
+  }
+  90% {
+    background-image: url(../img/Foto\ Bagian\ Beranda/4.jpeg);
+  }
+  100% {
+    background-image: url(../img/Foto\ Bagian\ Beranda/1.jpeg);
   }
 }
 .herobanner .container {
